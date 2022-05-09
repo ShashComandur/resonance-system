@@ -3,7 +3,7 @@
 
 # imports
 import hashlib
-import pygame
+from PIL import Image
 
 # takes in an mp3, returns its SHA512 hash
 def hash_file(filename):
@@ -39,13 +39,44 @@ def generateArray(hash):
             stringIndex += 2
     return arr
 
-def generateImage(arr):
+# generate the image from the hash
+def generateImage(arr, imageFilepath, truchetType):
+    # initialize canvas
+    img = Image.new('RGBA', (2000, 2000), color = 'red')
 
+    # loop through array, set color and write to image based on value
+    for i in range(16):
+        for j in range(16):
+            if (arr[j][i] == "00"):
+                cell = Image.open("Truchet Tiles/" + truchetType + "/1.png")
+            elif (arr[j][i] == "01"):
+                cell = Image.open("Truchet Tiles/" + truchetType + "/2.png")
+            elif (arr[j][i] == "10"):
+                cell = Image.open("Truchet Tiles/" + truchetType + "/3.png")
+            elif (arr[j][i] == "11"):
+                cell = Image.open("Truchet Tiles/" + truchetType + "/4.png")
+
+            # paste the cell in to the proper coordinates
+            img.paste(cell, (i*125, j*125), cell)
+    
+    # write to file
+    img.save(imageFilepath)
     return
 
-# ------------------------------------------------ testing - move to another file soon 
-message = hash_file("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/01 - The Approach.mp3")
-print("\nThe Approach: " + message + "\n")
+# put it all together!
+def truchetGenerator(songFilepath, imageFilepath, truchetType):
+    hash = hash_file(songFilepath)
+    arr = generateArray(hash)
+    print(arr)
+    generateImage(arr, imageFilepath, truchetType)
 
-arr = generateArray(message)
-print(arr)
+# ------------------------------------------------ testing - move to another file soon 
+# hash = hash_file("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/02 - Anomaly.mp3")
+# print(hash)
+
+# arr = generateArray(hash)
+# print(arr)
+
+# generateImage(arr)
+
+truchetGenerator("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/03 - Collider.mp3", "collider.png", "Test")
