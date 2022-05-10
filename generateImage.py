@@ -9,7 +9,6 @@ from PIL import Image
 def hashFile(filename):
    # make a hash object
    h = hashlib.sha512()
-
    # open file for reading in binary mode
    with open(filename,'rb') as file:
        # loop till the end of the file
