@@ -42,8 +42,9 @@ def generateArray(hash):
 # takes in the hash array, generates the image, writes it to the input filepath
 # truchetType is also an input, to specify the set of images to use
 def generateImage(arr, imageFilepath, truchetType):
-    # initialize canvas
+    # initialize canvas, with full transparency
     img = Image.new('RGBA', (2000, 2000), color = 'red')
+    img.putalpha(0)
 
     # loop through array, set color and write to image based on value
     for i in range(16):
