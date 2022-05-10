@@ -68,8 +68,4 @@ def generateImage(arr, imageFilepath, truchetType):
 def truchetGenerator(songFilepath, imageFilepath, truchetType):
     hash = hashFile(songFilepath)
     arr = generateArray(hash)
-    print(arr)
     generateImage(arr, imageFilepath, truchetType)
-
-# simple test
-truchetGenerator("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/03 - Collider.mp3", "collider.png", "Test")
