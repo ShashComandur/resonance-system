@@ -6,7 +6,7 @@ import hashlib
 from PIL import Image
 
 # takes in an mp3, returns its SHA512 hash
-def hash_file(filename):
+def hashFile(filename):
    # make a hash object
    h = hashlib.sha512()
 
@@ -22,11 +22,11 @@ def hash_file(filename):
    #return bin(int(h.hexdigest(), 16))
    return hextobin(h.hexdigest())
 
-# helper function to convert the hex string to a bin string
+# helper function - takes in a hex string, returns it in binary
 def hextobin(h):
   return bin(int(h, 16))[2:].zfill(len(h) * 4)
 
-# generate the 16x16 array to hold the bin substrings
+# takes in the SHA512 hash string in binary, returns it in an double array, with each space containing two bits
 def generateArray(hash):
     # initialize 16x16 double array to hold data for each tile
     arr = [[""]*16 for i in range(16)]
@@ -39,7 +39,8 @@ def generateArray(hash):
             stringIndex += 2
     return arr
 
-# generate the image from the hash
+# takes in the hash array, generates the image, writes it to the input filepath
+# truchetType is also an input, to specify the set of images to use
 def generateImage(arr, imageFilepath, truchetType):
     # initialize canvas
     img = Image.new('RGBA', (2000, 2000), color = 'red')
@@ -65,18 +66,10 @@ def generateImage(arr, imageFilepath, truchetType):
 
 # put it all together!
 def truchetGenerator(songFilepath, imageFilepath, truchetType):
-    hash = hash_file(songFilepath)
+    hash = hashFile(songFilepath)
     arr = generateArray(hash)
     print(arr)
     generateImage(arr, imageFilepath, truchetType)
 
-# ------------------------------------------------ testing - move to another file soon 
-# hash = hash_file("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/02 - Anomaly.mp3")
-# print(hash)
-
-# arr = generateArray(hash)
-# print(arr)
-
-# generateImage(arr)
-
+# simple test
 truchetGenerator("../../Everything/Art/Posters/~resonance_system/Music Files/Noisia - Outer Edges/03 - Collider.mp3", "collider.png", "Test")
