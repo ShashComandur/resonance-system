@@ -3,7 +3,7 @@ This is repository houses the code I used to finish my new art series, Resonance
 
 ### Author
 Shash Comandur  
-comandus@email.sc.edu  
+shashank.comandur@gmail.com  
 shashcomandur.com
 
 # About
