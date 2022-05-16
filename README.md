@@ -37,6 +37,8 @@ The files are all 2000x2000 .pngs, and because I decided to use a 16x16 array, 2
 and height of each tile. 
 
 I then ran this program on every song from every album (the music was sourced from the Google Play Music Store, as 320 kbps mp3s).
+I can't imagine posting the mp3s in the repository would be a good idea from a copyright perspective, so I kept them in a different
+folder on my local machine.
 
 # Results
 The raw images produced by the code are not what I ended up using in the series – I instead opted to composite all the results from
