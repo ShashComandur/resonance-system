@@ -3,8 +3,8 @@ This is repository houses the code I used to finish my new art series, Resonance
 
 ### Author
 Shash Comandur  
-shashcomandur.com
 shashank.comandur@gmail.com
+shashcomandur.com
 
 # About
 I wanted to create an series of pieces to commemorate my five favorite albums of all time. These albums, in ranked
@@ -29,7 +29,7 @@ Then, a 16x16 2D array is initialized. Each array entry gets two of the bits fro
 Knowing that two bits allows us to count to 4 (00, 01, 10, 11), we can design sets of truchet tiles,
 with four in a set, and assign each number a truchet tile. 
 
-The sets of tiles I designed are contained in the folder [Truchet Tiles](Truchet Tiles/). 
+The sets of tiles I designed are contained in the folder Truchet Tiles. 
 
 The program uses Pillow, the Python imaging library, to place the tiles in images and write them to files. 
 The files are all 2000x2000 .pngs, and because I decided to use a 16x16 array, 2000/16 = 125 px for the width
