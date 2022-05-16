@@ -2,9 +2,9 @@
 This is repository houses the code I used to finish my new art series, Resonance System.
 
 ### Author
-Shash Comandur  
-shashank.comandur@gmail.com
+Shash Comandur
 shashcomandur.com
+Email: shashank.comandur@gmail.com
 
 # About
 I wanted to create an series of pieces to commemorate my five favorite albums of all time. These albums, in ranked
