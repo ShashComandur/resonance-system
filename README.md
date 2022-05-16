@@ -3,8 +3,8 @@ This is repository houses the code I used to finish my new art series, Resonance
 
 ### Author
 Shash Comandur  
-shashank.comandur@gmail.com
 shashcomandur.com
+shashank.comandur@gmail.com
 
 # About
 I wanted to create an series of pieces to commemorate my five favorite albums of all time. These albums, in ranked
