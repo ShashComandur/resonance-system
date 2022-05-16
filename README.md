@@ -1,5 +1,5 @@
 # Resonance System
-This is repository houses the code I used to finish my new art series, Resonance System.
+This repository houses the code I used to make my new art series, Resonance System.
 
 ### Author
 Shash Comandur  
