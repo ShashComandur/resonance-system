@@ -14,11 +14,10 @@ def hashFile(filename):
        # loop till the end of the file
        chunk = 0
        while chunk != b'':
-           # read only 1024 bytes at a time
+           # read  1024 bytes at a time
            chunk = file.read(1024)
            h.update(chunk)
    # return the hex representation of digest
-   #return bin(int(h.hexdigest(), 16))
    return hextobin(h.hexdigest())
 
 # helper function - takes in a hex string, returns it in binary

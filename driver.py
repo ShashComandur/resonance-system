@@ -7,8 +7,9 @@ import os
 
 # variable declarations
 genericFilepath = "..\..\Everything\Art\Posters\~resonance_system\Files\\"
-albumNames = ["A$AP Rocky - Testing", "Camo & Krooked - Mosaik", "Flume - Skin", "Lido - Everything", "Noisia - Outer Edges"]
-truchetTypes = ["Test", "Triangles", "Circles"]
+albumNames = ["Lido - Everything"]
+# albumNames = ["A$AP Rocky - Testing", "Camo & Krooked - Mosaik", "Flume - Skin", "Lido - Everything", "Noisia - Outer Edges"]
+truchetTypes = ["Test", "Triangles", "Circles", "Lines"]
 
 # create the picture using every mp3 in every album folder
 for album in albumNames:
@@ -21,6 +22,6 @@ for album in albumNames:
             beginningSubstring = currentFilepath + "\\"
             newImageFilename = f.replace(currentFilepath+album, "")[:-4] +".png"
             newImageFilename = newImageFilename[len(beginningSubstring):]
-            generateImage.truchetGenerator(f, currentFilepath + "\\img\\" + newImageFilename, truchetTypes[2])
+            generateImage.truchetGenerator(f, currentFilepath + "\\img\\" + newImageFilename, truchetTypes[3])
 
 
