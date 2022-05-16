@@ -10,11 +10,11 @@ shashcomandur.com
 I wanted to create an series of pieces to commemorate my five favorite albums of all time. These albums, in ranked
 order, are as follows:
 
-5. [A$AP Rocky - Testing](https://open.spotify.com/album/3MATDdrpHmQCmuOcozZjDa?si=8YCnrzwuRB2YDpLL-721AA)
-4. [Flume - Skin](https://open.spotify.com/album/4NZWRpoMuXaHU7csTjWdB5?si=RbSVDggmTqOstWr7P6dJng)
-3. [Camo & Krooked - Mosaik](https://open.spotify.com/album/1miPtr5WVeMoYFvu0RZ6Mc?si=NzHVu0XLQw2Ve0TaSzHJQQ)
-2. [Lido - Everything](https://open.spotify.com/album/78VgrlxNqlGg3ApYVdQHyM?si=DFmoTUNWQbKUVpOIbenrTw)
 1. [Noisia - Outer Edges](https://open.spotify.com/album/73TmwDD6mBOZh6sF9sKXZo?si=sEck0GHTSfG60NGug_0tPQ)
+2. [Lido - Everything](https://open.spotify.com/album/78VgrlxNqlGg3ApYVdQHyM?si=DFmoTUNWQbKUVpOIbenrTw)
+3. [Camo & Krooked - Mosaik](https://open.spotify.com/album/1miPtr5WVeMoYFvu0RZ6Mc?si=NzHVu0XLQw2Ve0TaSzHJQQ)
+4. [Flume - Skin](https://open.spotify.com/album/4NZWRpoMuXaHU7csTjWdB5?si=RbSVDggmTqOstWr7P6dJng)
+5. [A$AP Rocky - Testing](https://open.spotify.com/album/3MATDdrpHmQCmuOcozZjDa?si=8YCnrzwuRB2YDpLL-721AA)
 
 I thought that a fun way to execute this idea would be to write a program to do something to visualize the music itself.
 I found that the [truchet tiles](https://en.wikipedia.org/wiki/Truchet_tiles) were a promising route to accomplish this, as a
