@@ -22,9 +22,8 @@ seemingly random arrangement of the tiles can almost always produce an interesti
 
 
 # Programs
-The main program, generateImage, takes in an mp3 file, runs it through the SHA512 hash from the hashlib Python library. 
-The hashing code is sourced from [Programiz](https://www.programiz.com/python-programming/examples/hash-file), a course based 
-coding tutoring service. The hash produces a 128 character hexadecimal string. The string is then converted to binary, yielding 512 bits. 
+The main program, generateImage, takes in an mp3 file, and runs it through the SHA512 hash from the hashlib Python library. 
+The hashing code is sourced from [Programiz](https://www.programiz.com/python-programming/examples/hash-file), a tutoring service. The hash produces a 128 character hexadecimal string. The string is then converted to binary, yielding 512 bits. 
 
 Then, a 16x16 2D array is initialized. Each array entry gets two of the bits from the hash result.
 Knowing that two bits allows us to count to 4 (00, 01, 10, 11), we can design sets of truchet tiles,
