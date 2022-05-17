@@ -7,7 +7,7 @@ shashank.comandur@gmail.com
 shashcomandur.com
 
 # About
-I wanted to create an series of pieces to commemorate my five favorite albums of all time. These albums, in ranked
+I wanted to create an series of pieces to commemorate my favorite albums of all time. These albums, in ranked
 order, are as follows:
 
 1. [Noisia - Outer Edges](https://open.spotify.com/album/73TmwDD6mBOZh6sF9sKXZo?si=sEck0GHTSfG60NGug_0tPQ)
@@ -26,7 +26,7 @@ The main program, generateImage, takes in an mp3 file, and runs it through the S
 The hashing code is sourced from [Programiz](https://www.programiz.com/python-programming/examples/hash-file), a tutoring service. The hash produces a 128 character hexadecimal string. The string is then converted to binary, yielding 512 bits. 
 
 Then, a 16x16 2D array is initialized. Each array entry gets two of the bits from the hash result.
-Knowing that two bits allows us to count to 4 (00, 01, 10, 11), we can design sets of truchet tiles,
+Knowing that two bits allows us to count to 3 (00, 01, 10, 11), we can design sets of truchet tiles,
 with four in a set, and assign each number a truchet tile. 
 
 The sets of tiles I designed are contained in the folder Truchet Tiles. 
